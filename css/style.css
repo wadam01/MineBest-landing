@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px !important;
+    color: aliceblue;
+}
+h2 {
+    font-size: 32px;
+    color: #00ADEE;
+    font-weight: 700;
+}
+h3 {
+    font-size: 28px;
+    color: #25316D;
+    margin-bottom: 20px; 
+}
+#top-baner {
+    background-color: #25316D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+}
+.left-side {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.left-side p {
+    color: aliceblue;
+    margin: 0 5px;
+
+}
+
+.left-side p span{
+    color: #00ADEE;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 25%;
+}
+
+.right-side .dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+#main-header {
+    background: url(../img/bg-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: 23%;
+    height: calc(100vh - 50px);
+    width: 100%;
+    position: relative;
+}
+
+.main-text {
+    position: absolute;
+    background-color: rgba(37, 49, 109, 0.5);
+    padding: 20px;
+    bottom: 60px;
+    right: 0;
+    width: 65%;
+}
+
+.main-text span {
+    font-size: 40px;
+    color: #00ADEE;
+    font-weight: 600;
+}
+
+#city {
+    margin: 60px 0;
+}
+
+.city-info {
+    margin: 100px 0;
+}
