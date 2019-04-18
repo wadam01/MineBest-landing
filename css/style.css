@@ -23,6 +23,15 @@ h3 {
     color: #25316D;
     margin-bottom: 20px; 
 }
+h4 {
+    font-size: 28px;
+    color: aliceblue;
+}
+
+section {
+    padding: 50px 0;
+}
+
 #top-baner {
     background-color: #25316D;
     display: flex;
@@ -69,8 +78,17 @@ h3 {
     height: calc(100vh - 50px);
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
+.logo-wrap {
+    position: relative;
+    top: 22px;
+    left: 20px;
+}
+.logo-wrap img {
+    max-width: 250px;
+}
 .main-text {
     position: absolute;
     background-color: rgba(37, 49, 109, 0.5);
@@ -86,10 +104,305 @@ h3 {
     font-weight: 600;
 }
 
-#city {
-    margin: 60px 0;
-}
+/* #city {
+    
+} */
 
 .city-info {
     margin: 100px 0;
 }
+
+#gallery {
+    background: url(/img/bg-gallery.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.img-wrap img {
+    width: 55%;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.img-wrap img:hover {
+    transform: scale(1.7);
+}
+#info {
+    background: url(/img/bg-gallery.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.info-text {
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.info-text .header {
+    font-size: 28px;
+    color: #00ADEE;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#main-footer {
+    padding: 40px 0;
+}
+
+.footer-text {
+    padding-bottom: 20px;
+}
+.footer-text p {
+    padding-bottom: 20px;
+    color: #25316D;
+}
+
+.footer-text ul {
+    padding-top: 20px;
+    color: #25316D;
+}
+.footer-text a {
+    text-decoration: none;
+    color: #00ADEE;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-img img {
+    min-width: 60px;
+    max-width: 200px;
+}
+
+.fab {
+    font-size: 40px;
+    color: #00ADEE;
+}
+
+.map-wrapper {
+    background: url(/img/MB-map.png);
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 50px 0;
+}
+
+/* HAMBURGER MENU */
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: 0px 0 0 -216px;
+  padding: 50px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+#desktop {
+    display: none;
+}
+
+.desktop-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.desktop-menu li {
+    color: aliceblue;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25316D;
+    margin-right: 5px;
+    height: 25px;
+    position: relative;
+    clip-path: polygon(86% 0, 100% 47%, 100% 100%, 0 100%, 0 0);
+}
+
+/* .desktop-menu li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 12px solid white;
+    border-left: 17px solid #25316D;
+    width: 0;
+} */
+
+/* RESPONSIVE */
+
+@media (min-width: 575.98px) {
+    .footer-img {
+        justify-content: normal;
+    }
+    .footer-img .fab {
+        margin-left: 20px;
+    }
+    .left-side {
+        width: auto;
+        margin-left: 20px;
+    }
+    .right-side {
+        width: 10%;
+        margin-right: 20px;
+    }
+}
+@media (min-width: 660px) {
+    .map-wrapper {
+        margin: 50px auto;
+        width: 560px;
+    }
+} 
+@media (min-width: 991px) {
+    .map-wrapper {
+        height: 600px;
+        background-size: cover;
+        width: auto;
+    }
+}
+@media (min-width: 1200px) {
+    #desktop {
+        display: block;
+        top: -26px;
+        right: 50px;    
+        position: relative;
+    }
+    .hamburger {
+        display: none;
+    }
+}    
