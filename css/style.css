@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-
+    line-height: 1.2;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -17,6 +17,7 @@ h2 {
     font-size: 32px;
     color: #00ADEE;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 h3 {
     font-size: 28px;
@@ -246,7 +247,7 @@ section {
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: #25316D;
   border-radius: 3px;
   
   z-index: 1;
@@ -363,6 +364,114 @@ section {
     border-left: 17px solid #25316D;
     width: 0;
 } */
+.soon {
+    font-size: 42px;
+    color: #25316D;
+    text-align: center;
+    padding: 100px;
+}
+
+
+/* HOSTING PAGE */
+#hosting-header {
+    position: relative;
+    overflow: hidden;
+    background: url(../img/bg-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: 23%;
+    height: calc(50vh - 50px);
+    width: 100%;
+}
+
+#hosting-header .logo-wrap a {
+   
+}
+
+/* ABOUT US */
+#about-us-header {
+    position: relative;
+    overflow: hidden;
+    background: url(../img/bg-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: 23%;
+    height: calc(50vh - 50px);
+    width: 100%;
+}
+
+#about-us-header .logo-wrap a {
+   
+}
+.about-us p {
+    color: #25316D;
+    font-weight: 700;
+}
+
+.submit-btn {
+    color: aliceblue;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25316D;
+    margin-right: 5px;
+    height: 25px;
+    position: relative;
+    clip-path: polygon(86% 0, 100% 47%, 100% 100%, 0 100%, 0 0);
+}
+
+.hosting-offer,
+.investor-offer {
+    background: url(/img/bg-btc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icons-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons-wrap p {
+    color: #25316D;
+    font-size: 22px;
+}
+
+.host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.host p {
+    padding: 10px 0;
+}
+
+.hosting-promise,
+.investor-packages {
+    background: url(/img/bg-gallery.jpg);
+    background-position: center;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.img-wrapper img {
+    max-width: 100%;
+    padding: 80px 10px;
+}
+
+.first-diagram,
+.second-diagram {
+    width: 150px;
+}
+.third-diagram {
+    width: 150px;
+}
 
 /* RESPONSIVE */
 
@@ -405,4 +514,11 @@ section {
     .hamburger {
         display: none;
     }
-}    
+    .icons-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 600px;
+    }
+}

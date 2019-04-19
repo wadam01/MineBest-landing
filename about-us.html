@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mine Best</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div id="top-baner">
+        <div class="left-side">
+            <p>Bitcoin(BTC) <span>5154.85 USD</span></p>
+            <p>Ethereum(ETH) <span>138.77 USD</span></p>
+        </div>
+        <!-- <div class="right-side">
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div> -->
+    </div>
+    <header id="about-us-header">
+        <div class="logo-wrap">
+            <a href="index.html">
+                <img src="/img/MB-logo-white.png" alt="MineBest logo">
+            </a>
+        </div>
+        <nav role="navigation" class="hamburger">
+            <div id="menuToggle">
+                <!--
+                      A fake / hidden checkbox is used as click reciever,
+                      so you can use the :checked selector on it.
+                      -->
+                <input type="checkbox" />
+
+                <!--
+                      Some spans to act as a hamburger.
+                      
+                      They are acting like a real hamburger,
+                      not that McDonalds stuff.
+                      -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+                      Too bad the menu has to be inside of the button
+                      but hey, it's pure CSS magic.
+                      -->
+                <ul id="menu">
+                    <a href="hosting.html">
+                        <li>Hosting</li>
+                    </a>
+                    <a href="investor.html">
+                        <li>Investor</li>
+                    </a>
+                    <a href="careers.html">
+                        <li>Careers</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="about-us.html">
+                        <li>About Us</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <nav id="desktop">
+            <ul class="desktop-menu">
+                <a href="hosting.html">
+                    <li>Hosting</li>
+                </a>
+                <a href="investor.html">
+                    <li>Investor</li>
+                </a>
+                <a href="careers.html">
+                    <li>Careers</li>
+                </a>
+                <a href="blog.html">
+                    <li>Blog</li>
+                </a>
+                <a href="about-us.html">
+                    <li>About Us</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <section class="about-us">
+        <div class="container">
+            <h2>About us</h2>
+            <p>
+                MineBest Sp. z o.o. is one of the most dynamically developing companies in the cryptocurrency mining industry. The core business entails building cryptocurrency mining farms and providing the service of professional hosting of mining equipment. Togather with our clients, MineBest is implementing a new standard for the mining ecosystem.
+            </p>
+            <p>
+                MineBest Sp. z o.o. is located in Warsaw (Poland) and was established in 2017 by a group of entrepreneurs engaged in the field of mining and cryptocurrencies. Our exeperience in the construction and maintenance of professional mining farms goes back to 2015.
+            </p>
+            <p>
+                The objective of MineBest is to provide the private consumer with the option of investing in the best and most advanced mining equipment of its kind in the world, and ensure secure facility, maintained 24/7 with the highest level of service in the field.
+            </p>
+            <p>
+                MineBest has a Representative Office in Israel as well as R&D and Sales Office in Poland. We will be happy to arrange a call and / or acquaintance meeting and provide the best service possible.
+            </p>
+        </div>
+        
+    </section>
+    <section class="contact-form">
+        <div class="container">
+            <div class="contact-form">
+                    <form class="form" id="contact-form" method="post" action="">
+                        <div class="controls">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <input id="form_name" class="form-control" type="text" name="name" placeholder="Name"  required="required" data-error="">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <input id="form_email" class="form-control" type="email" name="email" placeholder="E-mail" required="required" data-error="">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <textarea id="form_message" class="form-control" name="message" placeholder="Message" rows="6" required="required" data-error=""></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="submit-btn">
+                                <input id="contactBtn" type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <footer id="main-footer">
+            <div class="container">
+                <div class="footer-text">
+                    <p>If u would like to know more, please contact us.</p>
+                    <a href="www.minebest.com">www.minebest.com</a><br>
+                    <a href="mailto:support@minebest.com">support@minebest.com</a>
+                    <ul>
+                        <li>MineBest LLC</li>
+                        <li>Al. Jerozolimskie 142a (12th floor)</li>
+                        <li>02-305 Warsaw</li>
+                    </ul>
+                </div>
+                <div class="footer-img">
+                    <img src="img/MB-logo-dark.png" alt="MineBest logo">
+                    <a href="https://www.facebook.com/MineBestOfficial/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/company/minebest" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/minebestofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCzW5jUTularszg2FmrlSpNw " target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+</body>
+
+</html>
